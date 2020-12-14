@@ -140,10 +140,6 @@ class Day10Test {
     fun secondFile() {
         val joltDifference = day10.second(getResourceAsText("day10.input"))
 
-        assertEquals(1700, joltDifference)
+        assertEquals(12401793332096, joltDifference)
     }
-}
-
-fun getResourceAsText(path: String): String {
-    return object {}.javaClass.getResource(path).readText()
 }
