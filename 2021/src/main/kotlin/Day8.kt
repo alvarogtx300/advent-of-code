@@ -13,8 +13,8 @@ class Day8 {
     }
 
     private fun parseInput(input: String): List<Display> = input.lines()
-        .map { line -> line.split(" | ").map { it.split(" ") } }
-        .map { (input, output) -> Display(input.take(10), output.take(4)) }
+        .map { line -> line.split(" ") }
+        .map { Display(it.take(10), it.takeLast(4)) }
 }
 
 class Display(rawInput: List<String>, rawOutput: List<String>) {
